@@ -8,22 +8,33 @@
     android:padding="16dp"
     tools:context=".LoginFragment">
 
-    <EditText
+    <TextView
+        android:id="@+id/textView4"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/edit_text_username"
-        android:hint="Username"/>
+        android:layout_height="40dp"
+        android:text="Login"
+        android:textColor="@android:color/black"
+        android:textSize="18dp" />
 
     <EditText
+        android:id="@+id/edit_text_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="Username"
+        android:minHeight="48dp" />
+
+    <EditText
         android:id="@+id/edit_text_password"
-        android:hint="Password"/>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
 
     <Button
-        android:id="@+id/button_confirm"
+        android:id="@+id/button_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Confirm"/>
+        android:text="Login" />
 
 </LinearLayout>
